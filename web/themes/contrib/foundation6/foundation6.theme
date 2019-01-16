@@ -1,0 +1,7 @@
+<?php
+
+function foundation6_preprocess_top_bar_right(&$variables) {
+  $variables['test123'] = '456';
+}
+
+?>

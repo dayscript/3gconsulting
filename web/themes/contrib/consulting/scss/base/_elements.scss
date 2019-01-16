@@ -1,0 +1,105 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+// Headings
+//------------------------------------------
+h1, h2, h3,
+h4, h5, h6 {
+  letter-spacing: -1px;
+  line-height: 1.1em;
+}
+h2{
+  position: relative;
+  margin-bottom: 60px;
+  &:before{
+    content: "";
+    width: 80px;
+    height: 8px;
+    background: $primary-color;
+    bottom: -30px;
+    left: 0;
+    position: absolute;
+
+  }
+}
+//Oculta titulo de producto taxonomia
+h2.node-title{
+  display: none;
+}
+.button {
+  text-transform: uppercase;
+}
+.button.success{
+  background-color: $primary-color;
+  color: $white;
+}
+.button.success:hover, .button.success:focus {
+  background-color: #a61527;
+  color: $white;
+}
+a.views-more-link {
+  display: block;
+  margin-top: 20px;
+}
+//bullets
+.owl-theme .owl-controls .owl-page span {
+  background: $white;
+}
+.slide3g{
+  .owl-theme .owl-controls .owl-page span {
+    background: $primary-color;
+  }
+  .owl-theme .owl-controls {
+    margin-top: -60px;
+  }
+}
+// Anchors
+//-----------------------------------------------------------------------------
+// a {}
+
+// a:focus {}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+// }
+
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+
+// }
+
+// select {}

@@ -1,0 +1,15 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/consulting.css: {}
+  js:
+    js/STARTER.js: {}
+
+fonts:
+
+  css:
+
+    theme:
+
+      '//fonts.googleapis.com/css?family=Fjalla+One': { type: external, minified: true }

@@ -1,0 +1,38 @@
+.container-footer {
+  background: $light-gray;
+  padding: 22px 0;
+  img.icon {
+    opacity: 0.5;
+  }
+  h2{
+    font-size: 1.2em;
+    margin-bottom: 0;
+    &:before{
+      display: none;
+    }
+  }
+  ul li{
+    a{
+      padding: 0.4rem 0rem;
+      color: $oil;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
+.container-f{
+  border-bottom: 1px solid $medium-gray;
+  padding: 20px 0;
+  display: none;
+  @media only screen and (min-width: 600px){
+    display: block;
+  }
+}
+.container-f2{
+  padding: 20px 0;
+}
+#footer-last{
+  font-size: 0.8em;
+  color: $dark-gray;
+}
