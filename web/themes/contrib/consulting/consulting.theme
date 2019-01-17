@@ -28,7 +28,7 @@ function consulting_preprocess_html(&$variables) {
  * Add template suggestions and classes
  */
 function consulting_preprocess_node(&$variables) {
-   
+
 }
 
 /**
@@ -37,9 +37,31 @@ function consulting_preprocess_node(&$variables) {
  * Add convenience variables and template suggestions
  */
 function consulting_preprocess_page(&$variables) {
-    
+
     if($variables['is_front']){
         unset($variables['page']['content']['consulting_content']);
+    }
+
+    // Dynamic sidebars
+    if (!empty($left) && !empty($right)) {
+      $variables['main_grid'] = 'medium-6 medium-push-3';
+      $variables['sidebar_first_grid'] = 'medium-3 medium-pull-6';
+      $variables['sidebar_sec_grid'] = 'medium-3';
+    }
+    elseif (empty($left) && !empty($right)) {
+      $variables['main_grid'] = 'medium-9';
+      $variables['sidebar_first_grid'] = '';
+      $variables['sidebar_sec_grid'] = 'medium-3';
+    }
+    elseif (!empty($left) && empty($right)) {
+      $variables['main_grid'] = 'medium-9';
+      $variables['sidebar_first_grid'] = 'medium-3';
+      $variables['sidebar_sec_grid'] = '';
+    }
+    else {
+      $variables['main_grid'] = 'large-12';
+      $variables['sidebar_first_grid'] = '';
+      $variables['sidebar_sec_grid'] = '';
     }
 }
 
