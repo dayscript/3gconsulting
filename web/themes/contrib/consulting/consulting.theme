@@ -58,8 +58,8 @@ function consulting_preprocess_page(&$variables) {
 	      $variables['sidebar_sec_grid'] = '';
 	    }
 	    else {
-	      $variables['main_grid'] = 'large-12';
-	      $variables['sidebar_first_grid'] = '';
+	      $variables['main_grid'] = 'medium-9';
+	      $variables['sidebar_first_grid'] = 'medium-3';
 	      $variables['sidebar_sec_grid'] = '';
 	    }
 
