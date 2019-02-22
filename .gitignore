@@ -4,7 +4,8 @@
 /web/core/
 /web/modules/contrib/
 /web/themes/contrib/adminimal_theme/
-#/web/themes/contrib/zurb_foundation/
+/web/themes/contrib/zurb_foundation/
+/web/themes/contrib/foundation6/
 /web/profiles/contrib/
 /web/libraries/
 
